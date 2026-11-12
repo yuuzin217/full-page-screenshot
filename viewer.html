@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>スクリーンショット結果</title>
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <header>
+    <div class="meta">
+      <span id="filename">読み込み中…</span>
+      <span id="dimensions"></span>
+    </div>
+    <button id="downloadBtn" disabled>ダウンロード</button>
+  </header>
+  <main>
+    <p id="error" class="error"></p>
+    <img id="shot" alt="撮影したスクリーンショット">
+  </main>
+  <script src="db.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>

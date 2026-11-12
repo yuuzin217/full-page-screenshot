@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>📸 フルページスクリーンショット</h1>
+  <p class="desc">ページ全体を1枚のPNGで保存します。</p>
+  <button id="fullBtn" class="primary">ページ全体を撮影</button>
+  <button id="visibleBtn">表示中の画面だけ撮影</button>
+  <label class="opt"><input type="checkbox" id="openTabOpt" checked> 結果を別タブで開く</label>
+  <label class="opt"><input type="checkbox" id="downloadOpt" checked> 自動でダウンロードする</label>
+  <p id="status" role="status"></p>
+  <p class="note">撮影中は「デバッグを開始しました」という帯が一瞬表示されますが、撮影が終われば消えます。</p>
+  <script src="db.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
